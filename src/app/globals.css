@@ -1,0 +1,60 @@
+:root {
+  --bg: white;
+  --textColor: black;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--textColor);
+}
+
+.wrapper {
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rebeccapurple;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+@media screen and (max-width: 1450px) {
+  .wrapper {
+    max-width: 1066px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .wrapper {
+    max-width: 850px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .wrapper {
+    max-width: 650px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .wrapper {
+    max-width: 460px;
+  }
+}
